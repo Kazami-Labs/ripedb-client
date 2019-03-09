@@ -3,10 +3,10 @@
 
 namespace Dormilich\WebService\RIPE\RPSL;
 
-use Dormilich\WebService\RIPE\Object;
+use Dormilich\WebService\RIPE\RIPEObject;
 use Dormilich\WebService\RIPE\AttributeInterface as Attr;
 
-class AsBlock extends Object
+class AsBlock extends RIPEObject
 {
     /**
      * The version of the RIPE DB used for attribute definitions.
