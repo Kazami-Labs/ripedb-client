@@ -1,9 +1,9 @@
 <?php
 
-use Dormilich\WebService\RIPE\RIPEObject;
-use Dormilich\WebService\RIPE\RPSL\Person;
-use Dormilich\WebService\RIPE\RPSL\PoeticForm;
-use Dormilich\WebService\RIPE\RPSL\Role;
+use KazamiLabs\WebService\RIPE\RIPEObject;
+use KazamiLabs\WebService\RIPE\RPSL\Person;
+use KazamiLabs\WebService\RIPE\RPSL\PoeticForm;
+use KazamiLabs\WebService\RIPE\RPSL\Role;
 use PHPUnit\Framework\TestCase;
 
 class SecondaryObjectsTest extends TestCase
@@ -25,7 +25,7 @@ class SecondaryObjectsTest extends TestCase
 	 */
 	public function testObjectTypeAndKey($class, $type)
 	{
-		$class = 'Dormilich\\WebService\\RIPE\\RPSL\\'.$class;
+		$class = 'KazamiLabs\\WebService\\RIPE\\RPSL\\'.$class;
 		$obj = new $class('123');
 		$this->assertEquals($type, $obj->getType());
 		$this->assertEquals('123', $obj->getPrimaryKey());

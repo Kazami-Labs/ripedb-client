@@ -1,6 +1,6 @@
 <?php
 // InvalidAttributeException.php
 
-namespace Dormilich\WebService\RIPE\Exceptions;
+namespace KazamiLabs\WebService\RIPE\Exceptions;
 
 class InvalidAttributeException extends \OutOfBoundsException implements RPSLException {}

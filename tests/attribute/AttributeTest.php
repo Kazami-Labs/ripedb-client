@@ -1,7 +1,7 @@
 <?php
 
-use Dormilich\WebService\RIPE\Attribute;
-use Dormilich\WebService\RIPE\AttributeInterface as Attr;
+use KazamiLabs\WebService\RIPE\Attribute;
+use KazamiLabs\WebService\RIPE\AttributeInterface as Attr;
 use PHPUnit\Framework\TestCase;
 
 class AttributeTest extends TestCase
@@ -9,7 +9,7 @@ class AttributeTest extends TestCase
 	public function testAttributeInterfaceIsImplemented()
 	{
 		$attr = new Attribute('foo', true, true);
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\AttributeInterface', $attr);
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\AttributeInterface', $attr);
 	}
 
 	public function testAttributeHasCorrectName()
@@ -84,7 +84,7 @@ class AttributeTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException
 	 * @expectedExceptionMessageRegExp # \[foo\] #
 	 */
 	public function testAttributeDoesNotAcceptResource()
@@ -94,7 +94,7 @@ class AttributeTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException
 	 * @expectedExceptionMessageRegExp # \[foo\] #
 	 */
 	public function testAttributeDoesNotAcceptObject()
@@ -118,7 +118,7 @@ class AttributeTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException
 	 */
 	public function testSingleAttributeDoesNotAllowArrayInput()
 	{
@@ -157,7 +157,7 @@ class AttributeTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException
 	 */
 	public function testMultipleAttributeDoesNotAllowNonScalarArray()
 	{
@@ -166,7 +166,7 @@ class AttributeTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException
 	 */
 	public function testMultipleAttributeDoesNotAllowNestedArray()
 	{

@@ -1,8 +1,8 @@
 <?php
 
-use Dormilich\WebService\RIPE\RPSL\Inetnum;
-use Dormilich\WebService\RIPE\RPSL\Role;
-use Dormilich\WebService\RIPE\WebService;
+use KazamiLabs\WebService\RIPE\RPSL\Inetnum;
+use KazamiLabs\WebService\RIPE\RPSL\Role;
+use KazamiLabs\WebService\RIPE\WebService;
 use PHPUnit\Framework\TestCase;
 
 class LiveTest extends TestCase
@@ -41,7 +41,7 @@ class LiveTest extends TestCase
 
 		$obj = $this->getRIPE()->create($ip);
 
-		$this->assertInstanceOf('Dormilich\WebService\RIPE\RPSL\Inetnum', $obj);
+		$this->assertInstanceOf('KazamiLabs\WebService\RIPE\RPSL\Inetnum', $obj);
 
 		return $obj;
 	}

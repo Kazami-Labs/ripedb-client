@@ -1,7 +1,7 @@
 <?php
 
-use Dormilich\WebService\RIPE\AttributeValue;
-use Dormilich\WebService\RIPE\RIPEObject;
+use KazamiLabs\WebService\RIPE\AttributeValue;
+use KazamiLabs\WebService\RIPE\RIPEObject;
 use PHPUnit\Framework\TestCase;
 use Test\TestObject;
 
@@ -13,7 +13,7 @@ class ObjectTest extends TestCase
 	public function testObjectInterfaceIsImplemented()
 	{
 		$obj = new TestObject;
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\ObjectInterface', $obj);
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\ObjectInterface', $obj);
 	}
 
 	public function testObjectTypeIsCorrectlySet()
@@ -48,16 +48,16 @@ class ObjectTest extends TestCase
 	{
 		$obj = new TestObject;
 
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\Attribute', 
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\Attribute', 
 			$obj->getAttribute('bar'));
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\FixedAttribute', 
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\FixedAttribute', 
 			$obj->getAttribute('choice'));
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\MatchedAttribute', 
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\MatchedAttribute', 
 			$obj->getAttribute('num'));
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidAttributeException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidAttributeException
 	 */
 	public function testGetUnknownAttributeFails()
 	{
@@ -183,7 +183,7 @@ class ObjectTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\IncompleteRPSLObjectException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\IncompleteRPSLObjectException
 	 */
 	public function testIncompleteObjectToArrayFails()
 	{
@@ -216,7 +216,7 @@ class ObjectTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\IncompleteRPSLObjectException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\IncompleteRPSLObjectException
 	 */
 	public function testIncompleteObjectToXMLFails()
 	{

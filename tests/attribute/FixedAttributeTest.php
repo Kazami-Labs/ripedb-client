@@ -1,8 +1,8 @@
 <?php
 
-use Dormilich\WebService\RIPE\Attribute;
-use Dormilich\WebService\RIPE\FixedAttribute;
-use Dormilich\WebService\RIPE\AttributeInterface as Attr;
+use KazamiLabs\WebService\RIPE\Attribute;
+use KazamiLabs\WebService\RIPE\FixedAttribute;
+use KazamiLabs\WebService\RIPE\AttributeInterface as Attr;
 use PHPUnit\Framework\TestCase;
 
 class FixedAttributeTest extends TestCase
@@ -10,13 +10,13 @@ class FixedAttributeTest extends TestCase
 	public function testAttributeInterfaceIsImplemented()
 	{
 		$attr = new FixedAttribute('foo', true, []);
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\AttributeInterface', $attr);
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\AttributeInterface', $attr);
 	}
 
 	public function testAttributeClassIsExtended()
 	{
 		$attr = new FixedAttribute('foo', true, []);
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\Attribute', $attr);
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\Attribute', $attr);
 	}
 
 	public function testAttributeIsSingle()
@@ -49,7 +49,7 @@ class FixedAttributeTest extends TestCase
 	}
 
 	/**
-	 * @expectedException \Dormilich\WebService\RIPE\Exceptions\InvalidValueException
+	 * @expectedException \KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException
 	 * @expectedExceptionMessageRegExp # \[bar\] #
 	 */
 	public function testAttributeDoesNotAcceptUndefinedValue()

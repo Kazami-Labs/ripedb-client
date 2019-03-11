@@ -1,7 +1,7 @@
 <?php
 // AttributeInterface.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
 interface AttributeInterface
 {

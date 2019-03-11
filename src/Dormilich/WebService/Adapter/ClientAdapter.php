@@ -1,6 +1,6 @@
 <?php
 
-namespace Dormilich\WebService\Adapter;
+namespace KazamiLabs\WebService\Adapter;
 
 interface ClientAdapter
 {

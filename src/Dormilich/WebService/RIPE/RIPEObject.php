@@ -1,13 +1,13 @@
 <?php
 // Object.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
-use Dormilich\WebService\RIPE\AttributeInterface as Attr;
-use Dormilich\WebService\RIPE\Exceptions\IncompleteRPSLObjectException;
-use Dormilich\WebService\RIPE\Exceptions\InvalidAttributeException;
-use Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException;
-use Dormilich\WebService\RIPE\Exceptions\InvalidValueException;
+use KazamiLabs\WebService\RIPE\AttributeInterface as Attr;
+use KazamiLabs\WebService\RIPE\Exceptions\IncompleteRPSLObjectException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidAttributeException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException;
 
 /**
  * The prototype for every RIPE object class. 

@@ -1,10 +1,10 @@
 <?php
 // KeyCert.php
 
-namespace Dormilich\WebService\RIPE\RPSL;
+namespace KazamiLabs\WebService\RIPE\RPSL;
 
-use Dormilich\WebService\RIPE\RIPEObject;
-use Dormilich\WebService\RIPE\AttributeInterface as Attr;
+use KazamiLabs\WebService\RIPE\RIPEObject;
+use KazamiLabs\WebService\RIPE\AttributeInterface as Attr;
 
 /**
  * Be aware that the 'method', 'owner' and 'fingerpr' attributes 

@@ -1,9 +1,9 @@
 <?php
 // FixedAttribute.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
-use Dormilich\WebService\RIPE\Exceptions\InvalidValueException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException;
 
 class FixedAttribute extends Attribute
 {

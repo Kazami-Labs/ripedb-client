@@ -1,10 +1,10 @@
 <?php
 
-use Dormilich\WebService\RIPE\Attribute;
-use Dormilich\WebService\RIPE\AttributeInterface as Attr;
-use Dormilich\WebService\RIPE\AttributeValue;
-use Dormilich\WebService\RIPE\FixedAttribute;
-use Dormilich\WebService\RIPE\MatchedAttribute;
+use KazamiLabs\WebService\RIPE\Attribute;
+use KazamiLabs\WebService\RIPE\AttributeInterface as Attr;
+use KazamiLabs\WebService\RIPE\AttributeValue;
+use KazamiLabs\WebService\RIPE\FixedAttribute;
+use KazamiLabs\WebService\RIPE\MatchedAttribute;
 use PHPUnit\Framework\TestCase;
 use Test\RegObject;
 
@@ -47,12 +47,12 @@ class AttributeValueTest extends TestCase
 		$this->assertEquals('something', $reg['register']);
 
 		$poem = $reg['register']->getObject();
-		$this->assertInstanceOf('Dormilich\WebService\RIPE\RPSL\Poem', $poem);
+		$this->assertInstanceOf('KazamiLabs\WebService\RIPE\RPSL\Poem', $poem);
 		$this->assertSame('something', $poem->getPrimaryKey());
 	}
 
 	/**
-	 * @expectedException Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException
+	 * @expectedException KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException
 	 */
 	public function testGetObjectWithoutTypeFails()
 	{
@@ -61,7 +61,7 @@ class AttributeValueTest extends TestCase
 	}
 
 	/**
-	 * @expectedException Dormilich\WebService\RIPE\Exceptions\InvalidValueException
+	 * @expectedException KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException
 	 */
 	public function testGetObjectWithUnknownTypeFails()
 	{

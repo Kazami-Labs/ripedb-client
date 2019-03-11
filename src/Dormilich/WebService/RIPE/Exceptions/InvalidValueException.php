@@ -1,6 +1,6 @@
 <?php
 // InvalidValueException.php
 
-namespace Dormilich\WebService\RIPE\Exceptions;
+namespace KazamiLabs\WebService\RIPE\Exceptions;
 
 class InvalidValueException extends \UnexpectedValueException implements RPSLException {}

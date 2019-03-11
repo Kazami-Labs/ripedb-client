@@ -1,9 +1,9 @@
 <?php
 // Attribute.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
-use Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException;
 
 class Attribute implements AttributeInterface
 {

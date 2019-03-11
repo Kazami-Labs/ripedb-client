@@ -1,8 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use Dormilich\WebService\RIPE\RPSL\Route;
-use Dormilich\WebService\RIPE\RPSL\Route6;
+use KazamiLabs\WebService\RIPE\RPSL\Route;
+use KazamiLabs\WebService\RIPE\RPSL\Route6;
 
 class PrimaryObjectsTest extends TestCase
 {
@@ -29,7 +29,7 @@ class PrimaryObjectsTest extends TestCase
 	 */
 	public function testObjectTypeAndKey($class, $type)
 	{
-		$class = 'Dormilich\\WebService\\RIPE\\RPSL\\'.$class;
+		$class = 'KazamiLabs\\WebService\\RIPE\\RPSL\\'.$class;
 		$obj = new $class('123');
 		$this->assertEquals($type, $obj->getType());
 		$this->assertEquals('123', $obj->getPrimaryKey());

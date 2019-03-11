@@ -2,8 +2,8 @@
 
 namespace Test;
 
-use Dormilich\WebService\RIPE\RIPEObject;
-use Dormilich\WebService\RIPE\AttributeInterface as A;
+use KazamiLabs\WebService\RIPE\RIPEObject;
+use KazamiLabs\WebService\RIPE\AttributeInterface as A;
 
 class RegObject extends RIPEObject
 {

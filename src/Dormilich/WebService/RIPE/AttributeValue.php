@@ -1,10 +1,10 @@
 <?php
 // AttributeValue.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
-use Dormilich\WebService\RIPE\Exceptions\InvalidDataTypeException;
-use Dormilich\WebService\RIPE\Exceptions\InvalidValueException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidDataTypeException;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException;
 
 class AttributeValue
 {

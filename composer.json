@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dormilich\\": "src/Dormilich/"
+            "KazamiLabs\\": "src/KazamiLabs/"
         }
     },
     "autoload-dev": {

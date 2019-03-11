@@ -1,7 +1,7 @@
 <?php
 // RPSLException.php
 
-namespace Dormilich\WebService\RIPE\Exceptions;
+namespace KazamiLabs\WebService\RIPE\Exceptions;
 
 /**
  * This interface denotes an RPSL related exception since the defined 

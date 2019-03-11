@@ -1,7 +1,7 @@
 <?php
 
-use Dormilich\WebService\RIPE\AttributeInterface as A;
-use Dormilich\WebService\RIPE\Dummy;
+use KazamiLabs\WebService\RIPE\AttributeInterface as A;
+use KazamiLabs\WebService\RIPE\Dummy;
 use PHPUnit\Framework\TestCase;
 
 class DummyTest extends TestCase
@@ -22,7 +22,7 @@ class DummyTest extends TestCase
 		$obj = new Dummy('foo');
 		$obj['fizz'] = 'buzz';
 
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\Attribute', 
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\Attribute', 
 			$obj->getAttribute('fizz'));
 	}
 

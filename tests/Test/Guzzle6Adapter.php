@@ -2,7 +2,7 @@
 
 namespace Test;
 
-use Dormilich\WebService\Adapter\ClientAdapter;
+use KazamiLabs\WebService\Adapter\ClientAdapter;
 use GuzzleHttp\Client;
 use Psr\Http\Message\ResponseInterface;
 

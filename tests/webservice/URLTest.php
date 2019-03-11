@@ -1,9 +1,9 @@
 <?php
 
-use Dormilich\WebService\RIPE\RPSL\Person;
-use Dormilich\WebService\RIPE\RPSL\Poem;
-use Dormilich\WebService\RIPE\RPSL\Inetnum;
-use Dormilich\WebService\RIPE\WebService;
+use KazamiLabs\WebService\RIPE\RPSL\Person;
+use KazamiLabs\WebService\RIPE\RPSL\Poem;
+use KazamiLabs\WebService\RIPE\RPSL\Inetnum;
+use KazamiLabs\WebService\RIPE\WebService;
 use PHPUnit\Framework\TestCase;
 use Test\RegObject;
 
@@ -159,7 +159,7 @@ class URLTest extends TestCase
 	}
 
 	/**
-	 * @expectedException Dormilich\WebService\RIPE\Exceptions\InvalidValueException
+	 * @expectedException KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException
 	 */
 	public function testSearchRequestFailsOnNonQuery()
 	{

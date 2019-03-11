@@ -1,9 +1,9 @@
 <?php
 // Mntner.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
-use Dormilich\WebService\RIPE\AttributeInterface as Attr;
+use KazamiLabs\WebService\RIPE\AttributeInterface as Attr;
 
 /**
  * A stand-in for objects that don’t have the appropriate class defined.

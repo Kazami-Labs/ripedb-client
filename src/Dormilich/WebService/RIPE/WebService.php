@@ -1,10 +1,10 @@
 <?php
 // WebService.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
-use Dormilich\WebService\Adapter\ClientAdapter;
-use Dormilich\WebService\RIPE\Exceptions\InvalidValueException;
+use KazamiLabs\WebService\Adapter\ClientAdapter;
+use KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException;
 
 class WebService
 {

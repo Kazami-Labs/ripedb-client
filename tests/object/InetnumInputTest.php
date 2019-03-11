@@ -1,6 +1,6 @@
 <?php
 
-use Dormilich\WebService\RIPE\RPSL\Inetnum;
+use KazamiLabs\WebService\RIPE\RPSL\Inetnum;
 use PHPUnit\Framework\TestCase;
 use Test\IP;
 

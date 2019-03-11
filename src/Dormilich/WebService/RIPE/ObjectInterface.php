@@ -1,7 +1,7 @@
 <?php
 // ObjectInterface.php
 
-namespace Dormilich\WebService\RIPE;
+namespace KazamiLabs\WebService\RIPE;
 
 interface ObjectInterface
 {

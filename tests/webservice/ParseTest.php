@@ -1,9 +1,9 @@
 <?php
 
-use Dormilich\WebService\RIPE\RPSL\Person;
-use Dormilich\WebService\RIPE\RPSL\Poem;
-use Dormilich\WebService\RIPE\RPSL\Inetnum;
-use Dormilich\WebService\RIPE\WebService;
+use KazamiLabs\WebService\RIPE\RPSL\Person;
+use KazamiLabs\WebService\RIPE\RPSL\Poem;
+use KazamiLabs\WebService\RIPE\RPSL\Inetnum;
+use KazamiLabs\WebService\RIPE\WebService;
 use PHPUnit\Framework\TestCase;
 use Test\RegObject;
 
@@ -39,7 +39,7 @@ class ParseTest extends TestCase
 		$person = new Person('FOO-TEST');
 		$person = $ripe->read($person);
 
-		$this->assertInstanceOf('Dormilich\\WebService\\RIPE\\RPSL\\Person', $person);
+		$this->assertInstanceOf('KazamiLabs\\WebService\\RIPE\\RPSL\\Person', $person);
 
 		$this->assertCount(1, $ripe->getAllResults());
 
@@ -69,7 +69,7 @@ class ParseTest extends TestCase
 		$person = new Person('FOO-TEST');
 		$object = $ripe->read($person);
 
-		$this->assertInstanceOf('Dormilich\\WebService\\RIPE\\Dummy', $object);
+		$this->assertInstanceOf('KazamiLabs\\WebService\\RIPE\\Dummy', $object);
 		$this->assertEquals('register', $object->getType());
 		$this->assertEquals('ripe', $object->getPrimaryKey());
 	}
@@ -130,7 +130,7 @@ class ParseTest extends TestCase
 	}
 
 	/**
-	 * @expectedException Dormilich\WebService\RIPE\Exceptions\InvalidValueException
+	 * @expectedException KazamiLabs\WebService\RIPE\Exceptions\InvalidValueException
 	 */
 	public function testAbuseInfoFromInvalidIPFails()
 	{
@@ -267,7 +267,7 @@ class ParseTest extends TestCase
 
 		$mntner = $haiku['mnt-by'];
 		$this->assertEquals('mntner', $mntner->getType());
-		$this->assertInstanceOf('\Dormilich\WebService\RIPE\RPSL\Mntner', $mntner->getObject());
+		$this->assertInstanceOf('\KazamiLabs\WebService\RIPE\RPSL\Mntner', $mntner->getObject());
 		$this->assertEquals('http://rest.db.ripe.net/ripe/mntner/CROSSLINE-MNT', $mntner->getLink());
 	}
 
