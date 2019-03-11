@@ -1,19 +1,23 @@
 {
-    "name": "dormilich/ripedb-client",
+    "name": "kazami-labs/ripedb-client",
     "description": "A PHP library to communicate with the RIPE NCC database.",
     "type": "library",
     "license": "LGPL-2.1",
-    "homepage": "https://github.com/Dormilich/ripedb-client",
-    "authors": [
-        {
+    "homepage": "https://github.com/Kazami-Labs/ripedb-client",
+    "authors": [{
             "name": "Bertold von Dormilich",
             "email": "Dormilich@netscape.net",
+            "role": "Developer"
+        },
+        {
+            "name": "Shira Kagurazaka",
+            "email": "nico@ni-co.moe",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/Dormilich/ripedb-client/issues",
-        "source": "https://github.com/Dormilich/ripedb-client.git"
+        "issues": "https://github.com/Kazami-Labs/ripedb-client/issues",
+        "source": "https://github.com/Kazami-Labs/ripedb-client.git"
     },
     "require": {
         "php": "^5.4 || 7.0 - 7.1"
